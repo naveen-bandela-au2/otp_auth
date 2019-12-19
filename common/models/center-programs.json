@@ -1,0 +1,39 @@
+{
+  "name": "center_programs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "program_id": {
+      "type": "number",
+      "id": true
+    },
+    "center_id": {
+      "type": "number"
+    },
+    "category": {
+      "type": "string"
+    },
+    "sub_category": {
+      "type": "string"
+    },
+    "timeings": {
+      "type": "string"
+    },
+    "addons": {
+      "type": "any"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "centerDetails": {
+      "type": "belongsTo",
+      "model": "center_details",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

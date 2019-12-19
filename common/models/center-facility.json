@@ -1,0 +1,33 @@
+{
+  "name": "center_facility",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "facility_id": {
+      "type": "number",
+      "id": true
+    },
+    "center_id": {
+      "type": "number"
+    },
+    "faclity_name": {
+      "type": "string"
+    },
+    "addons": {
+      "type": "any"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "centerDetails": {
+      "type": "belongsTo",
+      "model": "center_details",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

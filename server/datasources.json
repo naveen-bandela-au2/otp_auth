@@ -1,0 +1,30 @@
+{
+  "emailDs": {
+    "name": "emailDs",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "b.naveen2085@gmail.com",
+          "pass": "93962802161"
+        }
+      }
+    ]
+  },
+  "db": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "t3",
+    "password": "root",
+    "name": "db",
+    "user": "postgres",
+    "connector": "postgresql"
+  }
+}

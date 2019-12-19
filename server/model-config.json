@@ -1,0 +1,70 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ]
+  },
+  "User": {
+    "dataSource": "db",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Email": {
+    "dataSource": "emailDs"
+  },
+  "user": {
+    "dataSource": "db",
+    "public": true,
+    "options": {}
+  },
+  "center_details": {
+    "dataSource": "db",
+    "public": true
+  },
+  "center_reviews": {
+    "dataSource": "db",
+    "public": true
+  },
+  "center_facility": {
+    "dataSource": "db",
+    "public": true
+  },
+  "center_programs": {
+    "dataSource": "db",
+    "public": true
+  },
+  "center_images": {
+    "dataSource": "db",
+    "public": true
+  },
+  "klay_admin_access": {
+    "dataSource": "db",
+    "public": true
+  },
+  "corporate_details": {
+    "dataSource": "db",
+    "public": true
+  },
+  "corporate_branch": {
+    "dataSource": "db",
+    "public": true
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "corporate_details",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "crop_id": {
+      "type": "number"
+    },
+    "crop_name": {
+      "type": "string"
+    },
+    "legal_name": {
+      "type": "any"
+    },
+    "crop_logo": {
+      "type": "string"
+    },
+    "addons": {
+      "type": "any"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "corporateBranches": {
+      "type": "hasMany",
+      "model": "corporate_branch",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

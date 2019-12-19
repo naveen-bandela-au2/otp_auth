@@ -1,0 +1,77 @@
+{
+  "name": "user",
+  "base": "User",
+  "idInjection": true,
+  "restrictResetPasswordTokenScope": true,
+  "properties": {
+    "otp_gen_time": {
+      "type": "number",
+      "postgresql": {
+        "columnName": "otp_gen_time",
+        "dataType": "bigint"
+      }
+    },
+    "user_type": {
+      "type": "number",
+      "default": 4
+    },
+    "status": {
+      "type": "Boolean",
+      "default": true
+    },
+    "crop_id": {
+      "type": "number"
+    },
+    "branch_id": {
+      "type": "number"
+    },
+    "emp_id": {
+      "type": "number"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "addons": {
+      "type": "any"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": [
+        "emplogin",
+        "kadmin",
+        "eadmin",
+        "genotp",
+        "admin_forgot_password"
+      ]
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "kadmin",
+      "permission": "ALLOW",
+      "property": "kadmin1"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "eadmin",
+      "permission": "ALLOW",
+      "property": "eadmin1"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "emp",
+      "permission": "ALLOW",
+      "property": "emp1"
+    }
+  ],
+  "methods": {}
+}

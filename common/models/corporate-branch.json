@@ -1,0 +1,63 @@
+{
+  "name": "corporate_branch",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "branch_id": {
+      "type": "number"
+    },
+    "crop_id": {
+      "type": "number"
+    },
+    "contract_agg_doc": {
+      "type": "string"
+    },
+    "contract_type": {
+      "type": "string"
+    },
+    "date_of_contract": {
+      "type": "date"
+    },
+    "date_of_exp": {
+      "type": "date"
+    },
+    "status": {
+      "type": "Boolean",
+      "default": true
+    },
+    "building_name": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "pincode": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "addons": {
+      "type": "any"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "corporateDetails": {
+      "type": "belongsTo",
+      "model": "corporate_details",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,39 @@
+{
+  "name": "center_reviews",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "review_id": {
+      "type": "number",
+      "id": true
+    },
+    "center_id": {
+      "type": "number"
+    },
+    "reviewer_name": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "number"
+    },
+    "date": {
+      "type": "string"
+    },
+    "addons": {
+      "type": "any"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "centerDetails": {
+      "type": "belongsTo",
+      "model": "center_details",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

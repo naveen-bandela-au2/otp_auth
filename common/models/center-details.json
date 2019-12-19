@@ -1,0 +1,90 @@
+{
+  "name": "center_details",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "center_id": {
+      "type": "number",
+      "id": true
+    },
+    "center_name": {
+      "type": "string"
+    },
+    "center_type": {
+      "type": "string"
+    },
+    "center_dir_email": {
+      "type": "string"
+    },
+    "center_dir_emp_id": {
+      "type": "number"
+    },
+    "center_dir_name": {
+      "type": "string"
+    },
+    "center_dir_ph_no": {
+      "type": "string"
+    },
+    "building_name": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "pincode": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "center_geo_point": {
+      "type": "GeoPoint"
+    },
+    "center_opening": {
+      "type": "string"
+    },
+    "center_closing": {
+      "type": "string"
+    },
+    "virtual_tour": {
+      "type": "string"
+    },
+    "about_center": {
+      "type": "string"
+    },
+    "addons": {
+      "type": "any"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "centerFacilities": {
+      "type": "hasMany",
+      "model": "center_facility",
+      "foreignKey": ""
+    },
+    "centerImages": {
+      "type": "hasMany",
+      "model": "center_images",
+      "foreignKey": ""
+    },
+    "centerPrograms": {
+      "type": "hasMany",
+      "model": "center_programs",
+      "foreignKey": ""
+    },
+    "centerReviews": {
+      "type": "hasMany",
+      "model": "center_reviews",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
